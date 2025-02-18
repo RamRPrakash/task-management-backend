@@ -1,0 +1,47 @@
+npm install express mongoose dotenv cors bcryptjs jsonwebtoken
+npm install --save-dev nodemon
+
+express → Web framework
+mongoose → MongoDB ORM
+dotenv → Environment variables
+cors → Enable CORS for frontend
+bcryptjs → Password hashing
+jsonwebtoken → JWT authentication
+nodemon → Auto-restart server on file changes
+
+
+dp username - ramprakash
+Password - Kh9ddhh0KG6Pjudp
+
+SP5jCpSt0WcFPmmp
+
+
+folder creation:
+mkdir src; mkdir src/config; mkdir src/models; mkdir src/routes; mkdir src/controllers; mkdir src/middleware
+
+New-Item src/server.js -ItemType File
+New-Item src/.env -ItemType File
+New-Item src/config/db.js -ItemType File
+New-Item src/models/User.js -ItemType File
+New-Item src/models/Task.js -ItemType File
+New-Item src/routes/authRoutes.js -ItemType File
+New-Item src/routes/taskRoutes.js -ItemType File
+New-Item src/controllers/authController.js -ItemType File
+New-Item src/controllers/taskController.js -ItemType File
+New-Item src/middleware/authMiddleware.js -ItemType File
+New-Item README.md -ItemType File
+
+
+npm install winston
+
+
+
+
+http://localhost:5000/tasks?page=1&limit=10
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FmMDQzZjNlYmI4OWNjOTU2Y2MzNjYiLCJpYXQiOjE3Mzk1MjMxODQsImV4cCI6MTczOTUyNjc4NH0.quSHccxXk6l6IF0CZxjbQJHZxQujVdp4Z4LMc0MuNS0
+
+
+
+
