@@ -20,7 +20,7 @@ const createTask = async (req, res) => {
         });
 
         const savedTask = await newTask.save(); // Save task to database
-        logger.info(`Task created: ${savedTask.title}`);
+        // logger.info(`Task created: ${savedTask.title}`);
         res.status(201).json({
             success: true,
             message: "Task created successfully",
@@ -28,7 +28,7 @@ const createTask = async (req, res) => {
         });
     } catch (error) {
         console.error(error);
-        logger.error(`Error creating task: ${error.message}`);
+        // logger.error(`Error creating task: ${error.message}`);
         res.status(500).json({ message: "Failed to create task" });
     }
 };
