@@ -20,7 +20,7 @@ const createTask = async (req, res) => {
         });
 
         const savedTask = await newTask.save(); // Save task to database
-        logger.info(`Task created: ${task.title}`);
+        logger.info(`Task created: ${savedTask.title}`);
         res.status(201).json({
             success: true,
             message: "Task created successfully",
