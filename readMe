@@ -29,7 +29,7 @@ New-Item src/routes/taskRoutes.js -ItemType File
 New-Item src/controllers/authController.js -ItemType File
 New-Item src/controllers/taskController.js -ItemType File
 New-Item src/middleware/authMiddleware.js -ItemType File
-New-Item README.md -ItemType File
+New-Item README.md -ItemType File 1
 
 
 npm install winston
