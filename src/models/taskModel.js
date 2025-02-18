@@ -19,7 +19,7 @@ const taskSchema = new mongoose.Schema({
             message: "Due date must be in the future",
         },
     },
-    userId: {  // Add userId to associate task with the user
+    user: {  // Add userId to associate task with the user
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User', // Reference to User model
         required: true,
