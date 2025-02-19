@@ -15,7 +15,7 @@ const app = express();
 
 // ✅ CORS Configuration
 const corsOptions = {
-    origin: ["http://localhost:3000", "https://task-management-backend-v1.onrender.com"], // Allow FE URLs
+    origin: ["http://localhost:3000", "https://task-management-backend-v2.onrender.com"], // Allow FE URLs
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
     allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
     credentials: true, // Enable if using cookies or authentication tokens
