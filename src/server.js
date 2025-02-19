@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const connectDB = require("./config/db.js"); // Import database connection
 
 const authRoutes = require("./routes/authRoutes");
@@ -10,6 +11,17 @@ const errorHandler = require("./middleware/errorMiddleware.js");
 
 dotenv.config();
 const app = express();
+
+
+// ✅ CORS Configuration
+const corsOptions = {
+    origin: ["http://localhost:3000", "https://task-management-backend-v1.onrender.com"], // Allow FE URLs
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
+    credentials: true, // Enable if using cookies or authentication tokens
+};
+app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 // Connect to MongoDB
 connectDB();
